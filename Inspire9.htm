@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC First Class Coach Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #1a3d7c;
+            padding: 10px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: white;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .coach-info {
+            width: 40%;
+        }
+
+        .coach-info h2 {
+            font-size: 22px;
+            color: #1a3d7c;
+            margin-bottom: 10px;
+        }
+
+        .coach-info p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        .coach-layout {
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 2px;
+            border-radius: 5px;
+            background-color: #f0f8ff;
+        }
+
+        .row.cabin {
+            background-color: #e6f7ff;
+        }
+
+        .row.coupe {
+            background-color: #fff3e6;
+        }
+
+        .row label {
+            font-weight: bold;
+            color: #1a3d7c;
+            width: 80%;
+        }
+
+        .row .berth {
+            display: flex;
+            justify-content: space-between;
+            width: 20%;
+        }
+
+        .berth span {
+            color: #1a3d7c;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+
+        .legend {
+            margin-top: 15px;
+        }
+
+        .legend h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .legend p {
+            margin: 3px 0;
+        }
+
+        .legend span {
+            font-weight: bold;
+            color: #1a3d7c;
+        }
+
+        .toilet {
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .attendants-chamber {
+            background-color: #e6f7ff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Seat Map of AC First Class (1A)</h1>
+    </div>
+
+    <div class="container">
+        <!-- Coach Information Section -->
+        <div class="coach-info">
+            <h2>AC First Class Coach</h2>
+            <p><strong>Class Code:</strong> 1A</p>
+            <p><strong>Coach Code:</strong> H</p>
+            <p><strong>To Seat / Sleep:</strong> 22</p>
+        </div>
+
+        <!-- Coach Layout Section -->
+        <div class="coach-layout">
+            <div class="toilet">TOILET</div>
+            <div class="toilet">TOILET</div>
+            <div class="row cabin">
+		<label>Door</label>
+		<span>Door</span>
+		</div>
+
+            <div class="row cabin">
+                <label>Cabin - A (4 Berths)</label>
+                <div class="berth">
+                    <span>01 L 03</span>
+                    <span>02 U 04</span>
+                </div>
+            </div>
+
+            <div class="row cabin">
+                <label>Cabin - B (4 Berths)</label>
+                <div class="berth">
+                    <span>05 L 07</span>
+                    <span>06 U 08</span>
+                </div>
+            </div>
+
+            <div class="row coupe">
+                <label>Coupe - C (2 Berths)</label>
+                <div class="berth">
+                    <span>09 L</span>
+                    <span>10 U</span>
+                </div>
+            </div>
+
+            <div class="row coupe">
+                <label>Coupe - D (2 Berths)</label>
+                <div class="berth">
+                    <span>11 L</span>
+                    <span>12 U</span>
+                </div>
+            </div>
+
+            <div class="row coupe">
+                <label>Coupe - E (2 Berths)</label>
+                <div class="berth">
+                    <span>13 L</span>
+                    <span>14 U</span>
+                </div>
+            </div>
+
+            <div class="row cabin">
+                <label>Cabin - F (4 Berths)</label>
+                <div class="berth">
+                    <span>15 L 17</span>
+                    <span>16 U 18</span>
+                </div>
+            </div>
+
+            <div class="row cabin">
+                <label>Cabin - G (4 Berths)</label>
+                <div class="berth">
+                    <span>19 L 21</span>
+                    <span>20 U 22</span>
+                </div>
+            </div>
+
+            <div class="attendants-chamber">
+                Attendant's Chamber
+            </div>
+
+		<div class="row cabin">
+		<label>Door</label>
+		<span>Door</span>
+		</div>
+
+
+            <div class="toilet">TOILET</div>
+            <div class="toilet">TOILET</div>
+        </div>
+    </div>
+
+    <!-- Legends Section -->
+    <div class="container">
+        <div class="legend">
+            <h3>LEGENDS</h3>
+            <p><span>Door</span></p>
+            <p><span>L</span>: Lower Berth</p>
+            <p><span>U</span>: Upper Berth</p>
+            <p><span>X</span>: Cabin (1A)</p>
+        </div>
+    </div>
+</body>
+
+</html>
